@@ -4,6 +4,7 @@ class CreatePlumbingJobs < ActiveRecord::Migration[6.1]
       t.belongs_to :plumber, index: true
       t.belongs_to :client, index: true
       t.date :appointment_date
+      t.string :status
       t.timestamps
     end
   end
