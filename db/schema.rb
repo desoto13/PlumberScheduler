@@ -49,6 +49,7 @@ ActiveRecord::Schema.define(version: 2022_10_03_100045) do
     t.bigint "plumber_id"
     t.bigint "client_id"
     t.date "appointment_date"
+    t.string "status"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["client_id"], name: "index_plumbing_jobs_on_client_id"
