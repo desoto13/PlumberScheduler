@@ -1,0 +1,37 @@
+<%= form_with model: client do |form| %>
+    <div>
+      <%= form.label :name %><br>
+      <%= form.text_field :name %>
+      <% client.errors.full_messages_for(:name).each do |message| %>
+        <div><%= message %></div>
+      <% end %>
+    </div>
+  
+    <div>
+      <%= form.label :age %><br>
+      <%= form.number_field :age %><br>
+      <% client.errors.full_messages_for(:age).each do |message| %>
+        <div><%= message %></div>
+      <% end %>
+    </div>
+
+    <div>
+      <%= form.label :private_note %><br>
+      <%= form.text_area :private_note %><br>
+      <% client.errors.full_messages_for(:private_note).each do |message| %>
+        <div><%= message %></div>
+      <% end %>
+    </div>
+
+    <div>
+      <%= form.label :address %><br>
+      <%= form.text_area :address %><br>
+      <% client.errors.full_messages_for(:address).each do |message| %>
+        <div><%= message %></div>
+      <% end %>
+    </div>
+  
+    <div>
+      <%= form.submit %>
+    </div>
+<% end %>

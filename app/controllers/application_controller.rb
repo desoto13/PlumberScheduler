@@ -1,10 +1,10 @@
 class ApplicationController < ActionController::Base
 
   def after_sign_up_path_for(resource)
-    jobs_path
+    plumbing_requests_path
   end
 
   def after_sign_in_path_for(resource)
-    jobs_path
+    plumbing_requests_path
   end
 end

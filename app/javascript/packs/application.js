@@ -13,3 +13,5 @@ Turbolinks.start()
 ActiveStorage.start()
 
 require("controllers")
+require("jquery")
+require("@nathanvda/cocoon")

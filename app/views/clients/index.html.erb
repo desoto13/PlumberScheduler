@@ -1,0 +1,10 @@
+<h1>Clients</h1>
+
+<ul>
+  <% @clients.each do |client| %>
+    <li><%= client.name %></li>
+    <li><%= client.age %></li>
+    <li><%= client.private_note %></li>
+    <li><%= client.address %></li>
+  <% end %>
+</ul>

@@ -1,0 +1,9 @@
+<h1>Plumbers</h1>
+
+<ul>
+  <% @plumbers.each do |plumber| %>
+    <li><%= link_to plumber.name, plumber_path(plumber) %></li>
+    <li><%= plumber.address %></li>
+    <li><%= plumber.vehicle %></li>
+  <% end %>
+</ul>
